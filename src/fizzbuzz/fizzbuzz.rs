@@ -1,11 +1,4 @@
-fn main() {
-    println!("Hello, world!");
-
-    fizzfuzz();
-}
-
-
-fn fizzfuzz() {
+pub fn print_fizzbuzz() {
     for i in 1..101 {
         if i % 15 == 0 {
             println!("fizzbuzz");
