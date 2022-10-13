@@ -1,9 +1,9 @@
 mod learnxiny;
 mod fizzbuzz;
 
-#[allow(unused_variables)]
-#[allow(unused_assignments)]
-#[allow(dead_code)]
+// #[allow(unused_variables)]
+// #[allow(unused_assignments)]
+// #[allow(dead_code)]
 fn main() {
     
     println!("Hello, world!");
@@ -15,9 +15,9 @@ fn main() {
 
         let mut line = String::new();
         println!("\nProvide a number for what you would like me to do...");
-        println!("  1. Do me fizzbuzz");
+        println!("  1. Show me FizzBuzz.");
         println!("  2. Add some stuff");
-        println!("  3. Call me a nerd");
+        println!("  3. Show me a Rustacian.");
 
         match std::io::stdin().read_line(&mut line) {
             Ok(_) => {
@@ -44,8 +44,6 @@ fn main() {
                 println!("Try again... Not a valid input.")
             },
         };
-
-
 
         println!("\n\nWould you like to continue?");
         line = String::new();
